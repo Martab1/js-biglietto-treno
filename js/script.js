@@ -26,6 +26,7 @@ CALCOLO PREZZO BIGLIETTO DEL TRENO
 // 1. km che vuole percorrere l'utente
 
 var nKilometri =  parseInt( prompt ( "quanti kilometri vuoi percorrere? "));
+document.getElementById("km").innerHTML = " tratta: " + nKilometri + "km";
 // console.log("l'utente vuole percorrere: ", nKilometri , "km");
 
 // costante prezzo al km
@@ -33,6 +34,7 @@ var kmPrice1 = 0.21;
 
 // prezzo base viaggio 
 var costo = nKilometri * kmPrice1;
+document.getElementById("first-price").innerHTML = " prezzo iniziale: " + (nKilometri * kmPrice1) + "€";
 // console.log("il viaggio costa:",costo, "€");
 
 
@@ -40,9 +42,8 @@ var costo = nKilometri * kmPrice1;
 // 2. età dell'utente
 
 var eta = parseInt( prompt ("quanti anni hai?"));
+document.getElementById("age").innerHTML = "età:" + eta;
 // console.log("età dell'utente: ", eta);
-
-
 
 
 
