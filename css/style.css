@@ -13,10 +13,10 @@ body{
     background-size: cover;
     color:black;
     display: flex;
+    justify-content: center;
 }
 
 section{
-    align-items: center;
     text-align: center;
     margin-top: 200px;
     font-size: 2rem;
