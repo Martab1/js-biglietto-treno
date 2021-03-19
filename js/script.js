@@ -58,14 +58,14 @@ var eta = parseInt( prompt ("quanti anni hai?"));
 if (eta < 18) {
    var sconto = costo * ( 20 / 100);
 //    console.log("il prezzo per il cliente minorenne è: " ,costo - result ,"€");
-   document.getElementById("result").innerHTML = " sei minorenne! con il 20% di sconto per te il prezzo del biglietto è di "+ (costo - sconto) +  "€";
+   document.getElementById("result").innerHTML = " sei minorenne! con il 20% di sconto per te il prezzo è di "+ (costo - sconto) +  "€";
 }  else if ( eta >= 65) {
    var sconto = costo * ( 40 / 100);
 //    console.log("il prezzo per il cliente over 65 è: " , costo - sconto, "€");
-   document.getElementById("result").innerHTML = " sei un over 65! con il 40% di sconto per te il prezzo del biglietto è di "+ (costo - sconto) + "€";
+   document.getElementById("result").innerHTML = " sei un over 65! con il 40% di sconto per te il prezzo è di "+ (costo - sconto) + "€";
 } else {
 //    console.log("non ci sono sconti applicati ");
-  document.getElementById("result").innerHTML = " non ci sono sconti applicati il prezzo del biglietto è di " + costo + "€";
+  document.getElementById("result").innerHTML = " non ci sono sconti applicati il prezzo è di " + costo + "€";
 }
     
 
