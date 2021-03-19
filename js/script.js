@@ -26,23 +26,23 @@ CALCOLO PREZZO BIGLIETTO DEL TRENO
 // 1. km che vuole percorrere l'utente
 
 var nKilometri =  parseInt( prompt ( "quanti kilometri vuoi percorrere? "));
-console.log("l'utente vuole percorrere: ", nKilometri , "km");
+// console.log("l'utente vuole percorrere: ", nKilometri , "km");
+
 
 // costante prezzo al km
-
 var kmPrice1 = 0.21;
 
-// prezzo base viaggio 
 
+// prezzo base viaggio 
 var costo = nKilometri * kmPrice1;
-console.log("il viaggio costa:",costo, "€");
+// console.log("il viaggio costa:",costo, "€");
 
 
 
 // 2. età dell'utente
 
 var eta = parseInt( prompt ("quanti anni hai?"));
-console.log("età dell'utente: ", eta);
+// console.log("età dell'utente: ", eta);
 
 
 
@@ -56,13 +56,16 @@ console.log("età dell'utente: ", eta);
 
 
 if (eta < 18) {
-   var result = costo * ( 20 / 100);
-   console.log("il prezzo per il cliente minorenne è: " ,costo - result ,"€");
+   var sconto = costo * ( 20 / 100);
+//    console.log("il prezzo per il cliente minorenne è: " ,costo - result ,"€");
+   document.getElementById("result").innerHTML = " sei minorenne! con il 20% di sconto per te il prezzo del biglietto è di "+ (costo - sconto) +  "€";
 }  else if ( eta >= 65) {
-   var result = costo * ( 40 / 100);
-   console.log("il prezzo per il cliente over 65 è: " , costo - result, "€");
+   var sconto = costo * ( 40 / 100);
+//    console.log("il prezzo per il cliente over 65 è: " , costo - sconto, "€");
+   document.getElementById("result").innerHTML = " sei un over 65! con il 40% di sconto per te il prezzo del biglietto è di "+ (costo - sconto) + "€";
 } else {
-    console.log("non ci sono sconti applicati ");
+//    console.log("non ci sono sconti applicati ");
+  document.getElementById("result").innerHTML = " non ci sono sconti applicati il prezzo del biglietto è di " + costo + "€";
 }
     
 
